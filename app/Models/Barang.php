@@ -9,4 +9,11 @@ class Barang extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    protected $table = "barangs";
+
+    public function detail()
+    {
+        return $this->hasMany(DetailFakturModel::class);
+    }
 }
