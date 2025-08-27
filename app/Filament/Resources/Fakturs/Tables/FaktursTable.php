@@ -23,7 +23,7 @@ class FaktursTable
                 TextColumn::make('tanggal_faktur'),
                 TextColumn::make('kode_customer')
                     ->label("Kode Customer"),
-                TextColumn::make('customer_id')
+                TextColumn::make('customer.nama_customer')
                     ->label("ID Customer"),
                 TextColumn::make('ket_faktur')
                     ->label("Keterangan Faktur"),

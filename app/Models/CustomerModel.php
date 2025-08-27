@@ -10,4 +10,9 @@ class CustomerModel extends Model
     use HasFactory;
     protected $table = 'customers';
     protected $guarded = [];
+
+    public function faktur()
+    {
+        return $this->hasMany(FakturModel::class);
+    }
 }
